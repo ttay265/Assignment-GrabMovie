@@ -1,54 +1,115 @@
 <core:FragmentDefinition xmlns:core="sap.ui.core">
 	<Panel xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m"
 		visible="{= ${globalProperties>/CurrentPage} === 1 }" width="100%" height="100%">
-		<IconTabBar selectedKey="__filter1" id="__bar0" expandable="false" upperCase="true" headerMode="Inline" stretchContentHeight="true"
+		<IconTabBar selectedKey="__filter1" expandable="false" upperCase="true" headerMode="Inline" stretchContentHeight="true"
 			applyContentPadding="false">
 			<items>
 				<IconTabFilter text="Now Showing" id="_filterNowShowing" iconColor="Positive">
 					<content>
-						<Panel>
-							<content>
-								<PullToRefresh refresh="refreshPull"/>
-								<List class="sapUiTinyMarginTop" width="auto" noDataText="Không có dữ liệu" id="__list1" headerDesign="Plain"
-									includeItemInSelection="true" mode="SingleSelectMaster" growing="true" growingScrollToLoad="true">
-									<items>
-										<CustomListItem type="Active" id="__item1">
-											<content>
-												<HBox height="100px" alignItems="Center">
+						<List class="sapUiTinyMarginTop" width="auto" noDataText="Không có dữ liê1" headerDesign="Plain" includeItemInSelection="true"
+							mode="SingleSelectMaster" growing="true" growingScrollToLoad="true">
+							<items>
+								<CustomListItem type="Active">
+									<content>
+										<HBox height="100px" alignItems="Center">
+											<items>
+												<Image
+													src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjUyNzQ2MTg3Ml5BMl5BanBnXkFtZTgwNzE4NDM3MTI@._V1_UX182_CR0,0,182,268_AL_.jpg"
+													height="100px"/>
+												<VBox class="sapUiTinyMarginTop sapUiTinyMarginBegin" fitContainer="true" width="100%" direction="Column" height="100px">
 													<items>
-														<Image
-															src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTk4ODQ1MzgzNl5BMl5BanBnXkFtZTgwMTMyMzM4MTI@._V1_UX182_CR0,0,182,268_AL_.jpg"
-															height="100px"/>
-														<VBox class="sapUiTinyMargin" fitContainer="true" width="100%" direction="Column" id="__vbox0" height="100px">
+														<HBox>
 															<items>
-																<HBox>
+																<Text class="sapThemeFontSize" text="Despicable Me 3 (2017)"/>
+															</items>
+														</HBox>
+														<HBox height="100%">
+															<items>
+																<VBox class="sapUiTinyMarginTop">
 																	<items>
-																		<Text class="sapThemeFontSize" text="Spiderman: Homecoming (2017)"/>
+																		<HBox>
+																			<items>
+																				<Label text="PG | 90min"/>
+																			</items>
+																		</HBox>
+																		<HBox>
+																			<items>
+																				<Label text="Hoạt hình | Hành động"/>
+																				<Label text="Phiêu lưu"/>
+																			</items>
+																		</HBox>
 																	</items>
-																</HBox>
-																<HBox>
+																</VBox>
+																<HBox class="sapUiTinyMarginEnd" width="100%" height="100%" justifyContent="End" alignItems="Center">
 																	<items>
-																		<Label text="G | 117min"/>
-																	</items>
-																</HBox>
-																<HBox>
-																	<items>
-																		<Label text="Viễn tưởng | Hành động"/>
+																		<Button width="70px" type="Accept" icon="sap-icon://payment-approval"/>
 																	</items>
 																</HBox>
 															</items>
-														</VBox>
+														</HBox>
 													</items>
-												</HBox>
-											</content>
-										</CustomListItem>
-									</items>
-								</List>
-							</content>
-						</Panel>
+												</VBox>
+											</items>
+										</HBox>
+									</content>
+								</CustomListItem>
+							</items>
+						</List>
 					</content>
 				</IconTabFilter>
-				<IconTabFilter text="Coming Soon" id="_filterComingSoon"/></items>
+				<IconTabFilter text="Coming Soon" id="_filterComingSoon">
+					<content>
+						<List class="sapUiTinyMarginTop" width="auto" noDataText="Không có dữ liê1" headerDesign="Plain" includeItemInSelection="true"
+							mode="SingleSelectMaster" growing="true" growingScrollToLoad="true">
+							<items>
+								<CustomListItem type="Active">
+									<content>
+										<HBox height="100px" alignItems="Center">
+											<items>
+												<Image
+													src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTk4ODQ1MzgzNl5BMl5BanBnXkFtZTgwMTMyMzM4MTI@._V1_UX182_CR0,0,182,268_AL_.jpg"
+													height="100px"/>
+												<VBox class="sapUiTinyMarginTop sapUiTinyMarginBegin" fitContainer="true" width="100%" direction="Column" height="100px">
+													<items>
+														<HBox>
+															<items>
+																<Text class="sapThemeFontSize" text="Spiderman: Homecoming (2017)"/>
+															</items>
+														</HBox>
+														<HBox height="100%">
+															<items>
+																<VBox class="sapUiTinyMarginTop">
+																	<items>
+																		<HBox>
+																			<items>
+																				<Label text="G | 117min"/>
+																			</items>
+																		</HBox>
+																		<HBox>
+																			<items>
+																				<Label text="Viễn tưởng | Hành động"/>
+																			</items>
+																		</HBox>
+																	</items>
+																</VBox>
+																<HBox class="sapUiTinyMarginEnd" width="100%" height="100%" justifyContent="End" alignItems="Center">
+																	<items>
+																		<Button width="70px" type="Transparent" icon="sap-icon://add-favorite"/>
+																	</items>
+																</HBox>
+															</items>
+														</HBox>
+													</items>
+												</VBox>
+											</items>
+										</HBox>
+									</content>
+								</CustomListItem>
+							</items>
+						</List>
+					</content>
+				</IconTabFilter>
+			</items>
 		</IconTabBar>
 		<content/>
 	</Panel>

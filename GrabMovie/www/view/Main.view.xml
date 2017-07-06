@@ -1,20 +1,21 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" id="main" controllerName="GrabMovie.controller.Main">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" id="main"
+	controllerName="GrabMovie.controller.Main">
 	<Page showHeader="false">
 		<footer>
-			<Bar>
-				<contentLeft>
-					<Button width="33%" id="btnBooking" press="navPage" type="Transparent"  text="" icon="sap-icon://bo-strategy-management"/>
-				</contentLeft>
-				<contentMiddle>
-					<Button id="btnTickets" press="navPage" type="Transparent"  text="" icon="sap-icon://activity-items"/>
-				</contentMiddle>
-				<contentRight>
-					<Button width="33%" id="btnProfile" press="navPage" type="Transparent"  icon="sap-icon://personnel-view"/>
-				</contentRight>
-			</Bar>
+			<Toolbar width="100%">
+				<content>
+					<Button id="btnBooking" press="navPage" type="{= ${globalProperties>/CurrentPage} === 1 ? 'Emphasized' : 'Transparent' }" width="33%" text=""
+						icon="sap-icon://bo-strategy-management"/>
+			
+					<Button id="btnTickets" press="navPage" type="{= ${globalProperties>/CurrentPage} === 2 ? 'Emphasized' : 'Transparent'}" width="33%" text=""
+						icon="sap-icon://activity-items"/>
+			
+					<Button id="btnProfile" press="navPage" type="{= ${globalProperties>/CurrentPage} === 3 ? 'Emphasized' : 'Transparent'}" width="33%"
+						icon="sap-icon://personnel-view"/>
+				</content>
+			</Toolbar>
 		</footer>
 		<content>
-			<PullToRefresh refresh="refreshPull"/>
 			<core:Fragment xmlns:core="sap.ui.core" fragmentName="GrabMovie.fragment.BookingPanel" type="XML" id="__panel3"/>
 			<core:Fragment xmlns:core="sap.ui.core" fragmentName="GrabMovie.fragment.PanelTickets" type="XML" id="__panel4"/>
 			<core:Fragment xmlns:core="sap.ui.core" fragmentName="GrabMovie.fragment.PanelProfile" type="XML" id="__panel5"/>

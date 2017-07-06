@@ -1,0 +1,27 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core">
+	<Panel xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" visible="{= ${globalProperties>/CurrentPage} === 1 }" width="100%" height="100%">
+		<IconTabBar selectedKey="__filter1" id="__bar0" expandable="false" upperCase="true" headerMode="Inline" stretchContentHeight="true">
+			<items>
+				<IconTabFilter text="Now Showing" id="_filterNowShowing" iconColor="Positive">
+					<content>
+						<List noDataText="Không có dữ liệu" id="__list1" headerDesign="Plain" includeItemInSelection="true" mode="SingleSelectMaster" growing="true" growingScrollToLoad="true">
+							<items>
+								<CustomListItem type="Navigation" id="__item1">
+									<content>
+										<HBox height="100px" alignItems="Center">
+											<items>
+												<Image src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTk4ODQ1MzgzNl5BMl5BanBnXkFtZTgwMTMyMzM4MTI@._V1_UX182_CR0,0,182,268_AL_.jpg" height="100px"/>
+												<VBox width="100%" direction="Column" id="__vbox0" height="100px"/>
+											</items>
+										</HBox>
+									</content>
+								</CustomListItem>
+							</items>
+						</List>
+					</content>
+				</IconTabFilter>
+				<IconTabFilter text="Coming Soon" id="_filterComingSoon"/></items>
+		</IconTabBar>
+		<content/>
+	</Panel>
+</core:FragmentDefinition>

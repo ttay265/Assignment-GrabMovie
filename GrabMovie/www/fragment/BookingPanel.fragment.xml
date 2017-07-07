@@ -6,7 +6,7 @@
 			<items>
 				<IconTabFilter text="Now Showing" id="_filterNowShowing" iconColor="Positive">
 					<content>
-						<List class="sapUiTinyMarginTop" width="auto" noDataText="Không có dữ liê1" headerDesign="Plain" includeItemInSelection="true"
+						<List class="sapUiTinyMarginTop" itemPress="toDetail" width="auto" noDataText="Không có dữ liê1" headerDesign="Plain" includeItemInSelection="true"
 							mode="SingleSelectMaster" growing="true" growingScrollToLoad="true">
 							<items>
 								<CustomListItem type="Active">
@@ -32,12 +32,12 @@
 																				<Label text="PG | 90min"/>
 																			</items>
 																		</HBox>
-																		<HBox>
+																		<VBox>
 																			<items>
 																				<Label text="Hoạt hình | Hành động"/>
-																				<Label text="Phiêu lưu"/>
+																				<Label text="Phiêu lưu |"/>
 																			</items>
-																		</HBox>
+																		</VBox>
 																	</items>
 																</VBox>
 																<HBox class="sapUiTinyMarginEnd" width="100%" height="100%" justifyContent="End" alignItems="Center">

@@ -1,0 +1,19 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="GrabMovie.controller.MovieDetail">
+	<Page title="Title" showNavButton="true" navButtonPress="back" backgroundDesign="Transparent" floatingFooter="true">
+		<content>
+			<Image width="100%" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTUxMzIxMDk2MV5BMl5BanBnXkFtZTgwODU1NTM3MTI@._V1_SX1777_CR0,0,1777,742_AL_.jpg" mode="Background" height="130px" backgroundSize="100%"/>
+			<HBox>
+				<items>
+					
+				</items>
+			</HBox>
+		</content>
+	<footer>
+	    <Toolbar width="100%" id="__toolbar1" design="Solid">
+	        <content>
+	            <Button width="100%" text="{i18n>lblBookTicket}" id="__button0" icon="sap-icon://payment-approval" type="Accept"/>
+	        </content>
+	    </Toolbar>
+	</footer>
+	</Page>
+</mvc:View>

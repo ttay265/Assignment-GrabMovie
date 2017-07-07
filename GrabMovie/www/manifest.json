@@ -82,9 +82,9 @@
 				"targetControl": "rootApp",
 				"targetAggregation": "pages"
 			}, {
-				"pattern": "menu",
-				"name": "menu",
-				"view": "Menu",
+				"pattern": "{movieId}",
+				"name": "movieDetail",
+				"view": "MovieDetail",
 				"targetControl": "rootApp",
 				"targetAggregation": "pages"
 			}, {

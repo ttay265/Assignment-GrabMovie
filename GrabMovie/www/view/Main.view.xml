@@ -2,14 +2,12 @@
 	controllerName="GrabMovie.controller.Main">
 	<Page showHeader="false">
 		<footer>
-			<Toolbar width="100%">
+			<Toolbar width="100%" design="Solid">
 				<content>
-					<Button id="btnBooking" press="navPage" type="{= ${globalProperties>/CurrentPage} === 1 ? 'Emphasized' : 'Transparent' }" width="33%" text=""
-						icon="sap-icon://bo-strategy-management"/>
-			
+					<Button id="btnBooking" press="navPage" type="{= ${globalProperties>/CurrentPage} === 1 ? 'Emphasized' : 'Transparent' }" width="33%"
+						text="" icon="sap-icon://bo-strategy-management"/>
 					<Button id="btnTickets" press="navPage" type="{= ${globalProperties>/CurrentPage} === 2 ? 'Emphasized' : 'Transparent'}" width="33%" text=""
 						icon="sap-icon://activity-items"/>
-			
 					<Button id="btnProfile" press="navPage" type="{= ${globalProperties>/CurrentPage} === 3 ? 'Emphasized' : 'Transparent'}" width="33%"
 						icon="sap-icon://personnel-view"/>
 				</content>

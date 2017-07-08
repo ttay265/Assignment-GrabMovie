@@ -5,41 +5,51 @@
             <Image width="100%"
                    src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTUxMzIxMDk2MV5BMl5BanBnXkFtZTgwODU1NTM3MTI@._V1_SX1777_CR0,0,1777,742_AL_.jpg"
                    mode="Background" height="130px" backgroundSize="100%"/>
-            <HBox class="movDetail_header">
-                <items>
-                    <Image class="mov_logo" height="120px"
-                           src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjUyNzQ2MTg3Ml5BMl5BanBnXkFtZTgwNzE4NDM3MTI@._V1_UX182_CR0,0,182,268_AL_.jpg"/>
-                    <VBox class="sapUiTinyMarginTop sapUiTinyMarginEnd">
+            <VBox>
+                <items class="movDetail_header">
+                    <HBox >
                         <items>
-                            <Text maxLines="2" class="sapThemeFontSize" text="Despicable Me 3 (2017)"/>
-                            <HBox>
+                            <Image class="mov_logo" height="120px"
+                                   src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjUyNzQ2MTg3Ml5BMl5BanBnXkFtZTgwNzE4NDM3MTI@._V1_UX182_CR0,0,182,268_AL_.jpg"/>
+                            <VBox class="sapUiTinyMarginTop sapUiTinyMarginEnd">
                                 <items>
-                                    <Label text="PG | 90min"/>
+                                    <Text maxLines="2" class="sapThemeFontSize" text="Despicable Me 3 (2017)"/>
+                                    <HBox>
+                                        <items>
+                                            <Label text="PG | 90min"/>
+                                        </items>
+                                    </HBox>
+                                    <HBox>
+                                        <items>
+                                            <Label text="{i18n>lblDirector}: "/>
+                                            <Text text="Kyle Balda, Pierre Coffin" width="100%"/>
+                                        </items>
+                                    </HBox>
+                                    <HBox>
+                                        <items>
+                                            <Label text="{i18n>lblYear}: "/>
+                                            <Text text="2017" width="100%"/>
+                                        </items>
+                                    </HBox>
+                                    <HBox>
+                                        <items>
+                                            <Label text="{i18n>lblCast}: "/>
+                                            <Text text=" Steve Carell, Kristen Wiig, Trey Parker" width="100%"/>
+                                        </items>
+                                    </HBox>
                                 </items>
-                            </HBox>
-                            <HBox>
-                                <items>
-                                    <Label text="{i18n>lblDirector}: "/>
-                                    <Text text="Kyle Balda, Pierre Coffin" width="100%"/>
-                                </items>
-                            </HBox>
-                            <HBox>
-                                <items>
-                                    <Label text="{i18n>lblYear}: "/>
-                                    <Text text="2017" width="100%"/>
-                                </items>
-                            </HBox>
-                            <HBox>
-                                <items>
-                                    <Label text="{i18n>lblCast}: "/>
-                                    <Text text=" Steve Carell, Kristen Wiig, Trey Parker" width="100%"/>
-                                </items>
-                            </HBox>
+                            </VBox>
+
+                        </items>
+                    </HBox>
+                    <VBox class="sapUiTinyMarginBeginEnd">
+                        <items>
+                            <Label text="{i18n>lblDescription}: " />
+                            <Text text="Gru meets his long-lost charming, cheerful, and more successful twin brother Dru who wants to team up with him for one last criminal heist."/>
                         </items>
                     </VBox>
-
                 </items>
-            </HBox>
+            </VBox>
 
 
         </content>

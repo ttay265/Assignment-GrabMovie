@@ -1,7 +1,17 @@
-/* Enter your custom styles here */
+
 .sapThemeFontSize {
-	font-size: 18px;
+    font-size: 18px;
 }
-.movDetail-header {
-	background-color: ;
+
+.mov_logo {
+    border: solid 3px #e0f1ff;
+    margin: 3px 10px 3px 3px;
+}
+
+.movDetail_page {
+    background-color: #eff4f9;
+}
+
+.movDetail_header {
+    background-color: #FFFFFF;
 }

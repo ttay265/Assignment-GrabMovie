@@ -3,6 +3,8 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/GrabMovie/node_modules/cordova-android/spec/e2e/fixtures/cordova-plugin-fake/platforms" />
+      <excludeFolder url="file://$MODULE_DIR$/GrabMovie/platforms" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
     </content>

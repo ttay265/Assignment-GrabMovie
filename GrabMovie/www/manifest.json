@@ -1,134 +1,100 @@
 {
-	"_version": "1.1.0",
-	"sap.app": {
-		"_version": "1.1.0",
-		"id": "GrabMovie",
-		"type": "application",
-		"i18n": "i18n/i18n.properties",
-		"applicationVersion": {
-			"version": "1.0.0"
-		},
-		"title": "{{appTitle}}",
-		"description": "{{appDescription}}",
-		"sourceTemplate": {
-			"id": "ui5template.basicSAPUI5ApplicationProject",
-			"version": "1.40.12"
-		}
-	},
-
-	"sap.ui": {
-		"_version": "1.1.0",
-		"technology": "UI5",
-		"icons": {
-			"icon": "",
-			"favIcon": "",
-			"phone": "",
-			"phone@2": "",
-			"tablet": "",
-			"tablet@2": ""
-		},
-		"deviceTypes": {
-			"desktop": true,
-			"tablet": true,
-			"phone": true
-		},
-		"supportedThemes": [
-			"sap_hcb",
-			"sap_belize"
-
-		]
-	},
-
-	"sap.ui5": {
-		"_version": "1.1.0",
-		"rootView": {
-			"viewName": "GrabMovie.view.InitView",
-			"type": "XML"
-		},
-		"dependencies": {
-			"minUI5Version": "1.30.0",
-			"libs": {
-				"sap.ui.core": {},
-				"sap.m": {},
-				"sap.ui.layout": {}
-			}
-		},
-		"contentDensities": {
-			"compact": true,
-			"cozy": true
-		},
-		"models": {
-			"i18n": {
-				"type": "sap.ui.model.resource.ResourceModel",
-				"settings": {
-					"bundleName": "GrabMovie.i18n.i18n"
-				}
-			},
-			"globalProperties": {
-				"type": "sap.ui.model.json.JSONModel",
-				"uri": "model/globalProperties.json"
-			}
-		},
-		"routing": {
-			"config": {
-				"routerClass": "sap.m.routing.Router",
-				"viewType": "XML",
-				"viewPath": "GrabMovie.view"
-			},
-			"routes": [{
-				"pattern": "",
-				"name": "default",
-				"view": "Main",
-				"targetControl": "rootApp",
-				"targetAggregation": "pages"
-			}, {
-				"pattern": "{movieId}",
-				"name": "movieDetail",
-				"view": "MovieDetail",
-				"targetControl": "rootApp",
-				"targetAggregation": "pages"
-			}, {
-				"pattern": "zwm01",
-				"name": "zwm01master",
-				"view": "ZWM01Master",
-				"targetControl": "rootApp",
-				"targetAggregation": "pages"
-			}, {
-				"pattern": "zwm01/{MaWorkDoc}",
-				"name": "zwm01detail",
-				"view": "ZWM01Detail",
-				"controlId": "rootApp",
-				"targetAggregation": "pages"
-			}, {
-				"pattern": "zwm01/{MaWorkDoc}/result",
-				"name": "zwm01results",
-				"view": "ZWM01Results",
-				"controlId": "rootApp",
-				"targetAggregation": "pages"
-			}, {
-				"pattern": "zwymb06",
-				"name": "zwymb06",
-				"view": "ZWYMB06",
-				"targetControl": "rootApp",
-				"targetAggregation": "pages"
-			}, {
-				"pattern": "zwymb06/{Date}",
-				"name": "zwymb06detail",
-				"view": "ZWYMB06Detail",
-				"targetControl": "rootApp",
-				"targetAggregation": "pages"
-			}, {
-				"pattern": "zwymb09",
-				"name": "zwymb09",
-				"view": "ZWYMB09",
-				"targetControl": "rootApp",
-				"targetAggregation": "pages"
-			}]
-		},
-		"resources": {
-			"css": [{
-				"uri": "css/style.css"
-			}]
-		}
-	}
+  "_version": "1.1.0",
+  "sap.app": {
+    "_version": "1.1.0",
+    "id": "GrabMovie",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "sourceTemplate": {
+      "id": "ui5template.basicSAPUI5ApplicationProject",
+      "version": "1.40.12"
+    }
+  },
+  "sap.ui": {
+    "_version": "1.1.0",
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    },
+    "supportedThemes": [
+      "sap_hcb",
+      "sap_belize"
+    ]
+  },
+  "sap.ui5": {
+    "_version": "1.1.0",
+    "rootView": {
+      "viewName": "GrabMovie.view.InitView",
+      "type": "XML"
+    },
+    "dependencies": {
+      "minUI5Version": "1.30.0",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {},
+        "sap.ui.layout": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "GrabMovie.i18n.i18n"
+        }
+      },
+      "globalProperties": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/globalProperties.json"
+      }
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "GrabMovie.view"
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "default",
+          "view": "Main",
+          "targetControl": "rootApp",
+          "targetAggregation": "pages"
+        },
+        {
+          "pattern": "{movieId}",
+          "name": "movieDetail",
+          "view": "MovieDetail",
+          "targetControl": "rootApp",
+          "targetAggregation": "pages"
+        }
+      ]
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    }
+  }
 }

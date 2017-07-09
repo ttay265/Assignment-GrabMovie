@@ -1,4 +1,3 @@
-
 .sapThemeFontSize {
     font-size: 18px;
 }
@@ -13,5 +12,6 @@
 }
 
 .movDetail_header {
-    background-color: #FFFFFF;
+    background-color: #FFF;
+    padding-bottom: 5px;
 }

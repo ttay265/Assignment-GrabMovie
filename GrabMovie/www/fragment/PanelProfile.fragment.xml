@@ -1,26 +1,23 @@
-<core:FragmentDefinition xmlns:core="sap.ui.core">
-	<Panel xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m"
-		visible="{= ${globalProperties>/CurrentPage} === 3 }" width="100%" height="100%">
-		<content>
-			<sap.m:ObjectHeader xmlns:sap.m="sap.m" title="Ngô Quốc Tuấn" number="123" intro="tuannq265@gmail.com" id="__header1"
-				fullScreenOptimized="true" titleLevel="Auto" titleSelectorTooltip="" numberUnit="{i18n>lblPoint}" backgroundDesign="Solid" condensed="true"
-				responsive="true" numberState="Warning">
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m">
+	<VBox visible="{= ${globalProperties>/CurrentPage} === 3 }" width="100%" height="100%">
+		<items>
+			<sap.m:ObjectHeader xmlns:sap.m="sap.m" title="Ngô Quốc Tuấn" number="123" intro="tuannq265@gmail.com" id="__header1" fullScreenOptimized="true" titleLevel="Auto" titleSelectorTooltip="" numberUnit="{i18n>lblPoint}" backgroundDesign="Solid" condensed="true" responsive="true" numberState="Warning">
 				<sap.m:attributes>
 					<sap.m:ObjectAttribute title="{i18n>lblUPhone}" text="0933644180"/>
 					<sap.m:ObjectAttribute text="06/09/1996" title="{i18n>lblUDoB}"/>
 				</sap.m:attributes>
 			</sap.m:ObjectHeader>
-			<HBox width="100%" height="20px"></HBox>
-			<List noDataText="Drop list items here" mode="SingleSelectMaster">
+			<HBox width="100%" height="20px"/>
+			<List noDataText="Drop list items here" mode="SingleSelectMaster" rememberSelections="false" showUnread="true" backgroundDesign="Transparent">
 				<items>
-					<StandardListItem type="Navigation" title="{i18n>btnEditProfile}" icon="sap-icon://edit"/></items>
+					<StandardListItem type="Navigation" title="{i18n>btnEditProfile}" icon="sap-icon://edit" selected="true"/></items>
 			</List>
-			<HBox width="100%" height="20px"></HBox>
+			<HBox width="100%" height="20px"/>
 			<List noDataText="Drop list items here" mode="SingleSelectMaster">
 				<items>
-					<StandardListItem type="Navigation" title="{i18n>btnLogout}" icon="sap-icon://log"/>
+					<StandardListItem type="Navigation" title="{i18n>btnLogout}" icon="sap-icon://log" infoState="Error" selected="true" unread="true"/>
 				</items>
 			</List>
-		</content>
-	</Panel>
+		</items>
+	</VBox>
 </core:FragmentDefinition>

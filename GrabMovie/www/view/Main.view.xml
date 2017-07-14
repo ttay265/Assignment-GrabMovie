@@ -16,6 +16,10 @@
                     <Button id="btnProfile" press="navPage"
                             type="{= ${globalProperties>/CurrentPage} === 3 ? 'Emphasized' : 'Transparent'}" width="33%"
                             icon="sap-icon://personnel-view"/>
+                    <Button id="btnLanguage" press="navPage"
+                            type="{= ${globalProperties>/CurrentPage} === 4 ? 'Emphasized' : 'Transparent' }"
+                            width="33%"
+                            text="" icon="sap-icon://bo-strategy-management"/>
                 </content>
             </Toolbar>
         </footer>
